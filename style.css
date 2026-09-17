@@ -22,3 +22,5 @@ nav.paginacion { display: flex; justify-content: space-between; margin-top: 40px
 #resultados-busqueda a { display: block; padding: 8px 10px; text-decoration: none; border-radius: 4px; }
 #resultados-busqueda a:hover { background: rgba(128,128,128,0.15); }
 .resultado-meta { opacity: 0.65; font-size: 0.85em; display: block; }
+.galeria { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; margin: 20px 0 28px; }
+.galeria a img { width: 100%; height: 140px; object-fit: cover; border-radius: 4px; display: block; }
