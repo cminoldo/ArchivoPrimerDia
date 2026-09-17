@@ -24,3 +24,5 @@ nav.paginacion { display: flex; justify-content: space-between; margin-top: 40px
 .resultado-meta { opacity: 0.65; font-size: 0.85em; display: block; }
 .galeria { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; margin: 20px 0 28px; }
 .galeria a img { width: 100%; height: 140px; object-fit: cover; border-radius: 4px; display: block; }
+.encabezado-logo { background: #ffffff; padding: 16px; border-radius: 8px; margin-bottom: 20px; }
+.encabezado-logo img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
