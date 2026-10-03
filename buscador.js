@@ -29,7 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     const max = 200;
     let html = coincidencias.slice(0, max).map(function (r) {
-      return '<a href="ediciones/primerdia-' + r.n + '.html">' + escaparHtml(r.t) +
+      const destino = 'ediciones/primerdia-' + r.n + '.html' + (r.a ? '#' + r.a : '');
+      return '<a href="' + destino + '">' + escaparHtml(r.t) +
         '<span class="resultado-meta">N.º ' + r.n + ' (' + escaparHtml(r.f) + ') · ' + escaparHtml(r.c) + '</span></a>';
     }).join('');
     if (coincidencias.length > max) {
